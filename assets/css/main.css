@@ -10,7 +10,7 @@
     padding: 0;
 }                
 
-                
+        
 
  :root{
     --mainFont:"Poppins", sans-serif;     
@@ -30,6 +30,8 @@
 
 body{
     font-family:var(--mainFont);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .text-main-color{
