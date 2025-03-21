@@ -1,0 +1,2372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/main.css"> 
+</head>
+  <body>
+    <div class="loading">
+    <span class="loader "></span>
+    </div>  
+    <!-- start of navbar -->
+     <nav class="navbar navbar-expand-lg  sticky-top bg-white">
+        <div class="container  ">
+          
+          <a class="navbar-brand " href="#">
+            <img src="./assets/img/public/logo.svg" alt="childiT icon">
+          </a>
+         
+          <div class="d-flex">
+            <div class="search-section navbar-toggler">
+              <i class=" mt-1 fa-solid fa-magnifying-glass search-icon-toggler"></i>
+              <div class="search-icon-form-toggler">
+                
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" required>
+                  <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  
+                </form>
+              </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasWithBothOptions" aria-controls="#offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        
+        </div>
+   
+
+        <div class=" offcanvas offcanvas-end nav-offcanvas collapse" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body " >
+            <div  id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 gap-2">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Programs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Parent Info</a>
+                </li>
+                <li class="nav-item dropdown  ">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Events
+                  </a>
+                  <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                    <li><a class="dropdown-item bg-white" href="#">Events</a></li>
+                    <li><a class="dropdown-item bg-white" href="#">Event Post</a></li>
+  
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Gallery
+                  </a>
+                  <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                    <li><a class="dropdown-item bg-white" href="#">Gallery Boxed</a></li>
+                    <li><a class="dropdown-item bg-white" href="#">Gallery full width</a></li>
+  
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages
+                  </a>
+                  <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                    <li><a class="dropdown-item bg-white" href="#">FAQs</a></li>
+                    <li><a class="dropdown-item bg-white" href="#">Testimonials</a></li>
+                    <li><a class="dropdown-item bg-white" href="#">Prices</a></li>
+  
+                  </ul>
+                </li>
+        
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blog
+                  </a>
+                  <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                    <li><a class="dropdown-item bg-white" href="#">Blog Posts</a></li>
+                    <li><a class="dropdown-item bg-white" href="#">Single Post</a></li>
+  
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Contacts</a>
+                </li>
+                
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Programs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Parent Info</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Events
+                </a>
+                <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                  <li><a class="dropdown-item bg-white" href="#">Events</a></li>
+                  <li><a class="dropdown-item bg-white" href="#">Event Post</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Gallery
+                </a>
+                <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                  <li><a class="dropdown-item bg-white" href="#">Gallery Boxed</a></li>
+                  <li><a class="dropdown-item bg-white" href="#">Gallery full width</a></li>
+
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                </a>
+                <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                  <li><a class="dropdown-item bg-white" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item bg-white" href="#">Testimonials</a></li>
+                  <li><a class="dropdown-item bg-white" href="#">Prices</a></li>
+
+                </ul>
+              </li>
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                </a>
+                <ul class="dropdown-menu border-bottom-0 border-end-0 border-start-0">
+                  <li><a class="dropdown-item bg-white" href="#">Blog Posts</a></li>
+                  <li><a class="dropdown-item bg-white" href="#">Single Post</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Contacts</a>
+              </li>
+              
+            </ul>
+            <div class="search-section">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <div class="search-icon-form">
+                
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" required>
+                  <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  
+                </form>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </nav>
+     <!-- end of navbar -->
+     <!-- start of quick list -->
+      <div class="qiucList">
+           <div class="quick-link qlink1 ">
+             <div class="quick-link-head">
+              <div class="quick-head-img">
+              <img src="./assets/img/public/map-marker-white.svg">
+              </div>
+              <span>Location</span>
+             </div>
+             <div class="quick-link-item quick-link-item1">
+              <div class="inner-quick-item location-img">
+                <img src="./assets/img/public/map.png">
+              </div>
+             </div>
+           </div>
+
+           <div class="quick-link qlink2">
+            <div class="quick-link-head">
+              <div class="quick-head-img">
+               <img src="./assets/img/public/calendar-white.svg">
+              </div>
+             <span>Book a tour</span>
+            </div>
+            <div class="quick-link-item quick-link-item2">
+              <div class="inner-quick-item ">
+                <h2>Book a tour</h2>
+                <form action="post" >
+                  <input class="w-100 mb-2" type="text" name="name"  placeholder="Your name" required>
+                  <div class="row">
+                     <div class="col-md-6">
+                     <input type="email" name="email"  placeholder="Your e-mail" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="phone"  placeholder="Your Phone" required>
+                     </div>
+                  </div>
+                  <input class="w-100 mt-2 mb-3" type="datetime" name="bd"  placeholder="What is your child's birth date?">
+                  
+                  <label class="w-100  mb-3" >Which care days do you required?</label>
+                   
+                  <ul class="d-flex w-50 gap-3 flex-wrap">
+                    <li>
+                        <input type="checkbox" id="Monday" name="Monday" value="Monday">
+                        <label for="Monday">Monday</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Thursday" name="Thursday" value="Thursday">
+                      <label for="Thursday"> Thursday</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday">
+                      <label for="Tuesday"> Tuesday</label>
+                    </li>
+                    <li>
+                    <input type="checkbox" id="Friday" name="Friday" value="Friday">
+                    <label for="Friday"> Friday</label>
+                  </li>
+                    <li>
+                      <input type="checkbox" id="Wednsday" name="Wednsday" value="Wednsday">
+                      <label for="Wednsday">Wednsday</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="Saturday" name="Saturday" value="Saturday">
+                    <label for="Saturday"> Saturday</label>
+                  </li>
+                  
+                   
+                  </ul>
+
+                  
+                 
+                  <input class="w-100 mb-3" type="datetime" name="startDate"  placeholder="Desired Start Date">
+                  <button type="submit"> Submit <i class="fa-solid fa-arrow-right"></i> </button>
+                </form>
+              </div>
+             </div>
+          </div>
+
+
+          <div class="quick-link qlink3">
+            <div class="quick-link-head ">
+              <div class="quick-head-img">
+               <img src="./assets/img/public/paper-white.svg">
+              </div>
+             <span>For Parents</span>
+            </div>
+            <div class="quick-link-item quick-link-item3">
+              <div class="inner-quick-item">
+              <h2>For Parents</h2>
+              <ul class="contactUl d-flex flex-column flex-wrap ps-2 ">
+                <li class="d-flex gap-3 align-items-center justify-content-between">
+                  <div class="d-flex gap-3 justify-content-center">
+                    <img src="./assets/img/public/handbook.svg" alt="handbook" >
+                    <p>Parent Handbook (246 Kb)</p>
+                  </div>
+                   <a href="#">
+                    <img src="./assets/img/public/pdf-ico.svg" alt="pdf icon" >
+                    <span>download</span>
+                   </a>
+                </li>
+                <li class="d-flex gap-3 align-items-center justify-content-between">
+                  <div class="d-flex gap-3 justify-content-center">
+                  <img src="./assets/img/public/checklist.svg" alt="checklist" >
+                  <p>Child Care Checklist (95 KB)</p>
+                  </div>
+                  <a href="#">
+                    <img src="./assets/img/public/pdf-ico.svg" alt="pdf icon" >
+                    <span>download</span>
+                  </a>
+                 
+                </li>
+                <li class="d-flex gap-3 align-items-center justify-content-between">
+                  <div class="d-flex gap-3 justify-content-center">
+                  <img src="./assets/img/public/paper-form.svg" alt="paper-form" >
+                  <p>Agreement Form (94 KB)</p>
+                  </div>
+                  <a href="#">
+                    <img src="./assets/img/public/pdf-ico.svg" alt="pdf icon" >
+                    <span>download</span>
+                  </a>
+               
+                </li>
+                <li class="d-flex gap-3 align-items-center justify-content-between">
+                  <div class="d-flex gap-3 justify-content-center">
+                  <img src="./assets/img/public/billing.svg" alt="billing" >
+                  <p>Monthly Billing Chart (95 KB)</p>
+                  </div>
+                  <a href="#">
+                    <img src="./assets/img/public/pdf-ico.svg" alt="pdf icon" >
+                    <span>download</span>
+                  </a>
+                
+                </li>
+                
+              </ul>
+            </div>
+            </div>
+          </div>
+
+          <div class="quick-link qlink4">
+            <div class="quick-link-head">
+              <div class="quick-head-img">
+                <img src="./assets/img/public/phone-white.svg">
+              </div>
+             <span>Contacts</span>
+            </div>
+            <div class="quick-link-item quick-link-item4">
+              <div class="inner-quick-item">
+              <h2>Our Contacts</h2>
+              <ul class="contactUl d-flex flex-column flex-wrap ps-2 ">
+                <li class="d-flex gap-2">
+                  <img src="./assets/img/public/map-marker-small.svg" alt="marker" >
+                   <a href="#">3261 Anmoore Road Brooklyn, NY 11230</a>
+                </li>
+                <li class="d-flex gap-2">
+                  <img src="./assets/img/public/call.svg" alt="call" >
+                  <a href="#">800-123-4567, Fax: 718-724-3312</a>
+                </li>
+                <li class="d-flex gap-2">
+                  <img src="./assets/img/public/envelope.svg" alt="envelope" >
+                  <a href="#">officeone@youremaissss.com</a>
+                </li>
+                <li class="d-flex gap-2 align-items-start">
+                  <img src="./assets/img/public/clock.svg" alt="clock" >
+                  <span>Mon-Fri: 9:00 am – 5:00 pm</span>
+                </li>
+                
+              </ul>
+            </div>
+            </div>
+          </div>
+      </div>
+     <!-- end of quick list -->
+     <!-- start of hedrer-->
+    <header  >
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500" >
+        <div class="carousel-indicators">
+          <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+        </div>
+        <div class="carousel-inner  ">
+          <div class="carousel-item active w-100">
+            <img src="./assets/img/public/main-slider-1-min.jpg" class="d-block slider-bg-img w-100" alt="first slider img">
+           
+              <div class="cloud-img-div carousel-caption d-block   " >
+                <img class="cloud-img" src="./assets/img/public/main-slider-rect.svg" alt="cloud">
+                <div class="cloud-content d-flex flex-column gap-2 align-items-center justify-content-center ">
+                  <div class="home-icon-div">
+                    <img class="home-icon " src="./assets/img/public/slider-ico1.svg" alt="home icon">
+                  </div>
+                  <span class="slider-span ">Looking for a center where</span>
+                  <p class="slider-p "><span>Your Child</span><br> Will Be Safe?</p>
+                </div>
+              </div>
+    
+          </div>
+          <div class="carousel-item w-100">
+            <img src="./assets/img/public/main-slider-2-min.jpg" class="d-block slider-bg-img w-100" alt="first slider img">
+           
+              <div class="cloud-img-div carousel-caption d-block   " >
+                <img class="cloud-img" src="./assets/img/public/main-slider-rect.svg" alt="cloud">
+                <div class="cloud-content d-flex flex-column gap-2 align-items-center justify-content-center ">
+                  <div class="home-icon-div s">
+                    <img class="home-icon" src="./assets/img/public/slider-ico-2.svg" alt="airplan icon">
+                  </div>
+                  <span class="slider-span ">Where Fun Happens!</span>
+                  <p class="slider-p "><span>Educating</span><br> Your Children</p>
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+     <!-- end of hedrer-->  
+    <!-- start of theCenter -------------------------------------- -->
+     <section class="theCenter py-1">
+      <div class="container-md">
+          <div class="row theCenter-row g-5 align-items-center justify-content-center  m-0 ">
+            <div class="d-flex align-items-center col-6 theCenter-img wow bounceInLeft " data-wow-duration="2s">
+                <svg viewBox="0 0 526 502" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="img1" maskUnits="userSpaceOnUse" x="0" y="0" width="526" height="502">
+                    <path d="M51 8.49999C125.8 -21.9 276.833 39.8333 343 74.5C288.5 32.5 323 18.5 347 20.5C371 22.5 432.5 44.5 467.5 68C495.5 86.8 491.167 99.8333 485.5 104C489.333 108.333 499.7 121.5 510.5 139.5C524 162 532.5 183.5 517 210C504.6 231.2 446.833 231.833 421 229.5C419.667 229.5 422.4 233.9 444 251.5C471 273.5 495.5 299.5 493.5 330.5C491.9 355.3 436.833 363.833 409.5 365C410.5 368.5 409.8 376.9 399 382.5C388.2 388.1 355.833 387.5 341 386.5C364.167 399 410.3 428.9 409.5 448.5C408.5 473 386.5 492 344 488C301.5 484 238 444.5 250 452.5C262 460.5 280 481.5 271.5 492C263 502.5 236 504.5 216.5 496C197 487.5 81.5 440.5 67.5 397.5C53.5 354.5 83.5 367 81.5 359.5C79.5 352 53 346.5 25.5 293C3.50001 250.2 34.5 226.5 58 224.5C54.8333 224.5 40.3 217.8 23.5 191C6.7 164.2 25.8333 142.5 37.5 135C35.5 133.167 30.6 128.6 27 125C22.5 120.5 -42.5 46.5 51 8.49999Z" fill="#C4C4C4"></path>
+                </mask>
+                <g mask="url(#img1)">
+                    <rect y="-13" width="750" height="523" fill="url(#pattern43)"></rect>
+                </g>
+                <defs>
+                    <pattern id="pattern43" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#for-img43" transform="scale(0.00133333 0.00191205)"></use>
+                    </pattern>
+                    <image id="for-img43" width="750" height="523" xlink:href="https://smartdata.tonytemplates.com/childit/wp-content/uploads/2019/09/svg-block-1.jpg"></image>
+                </defs>
+            </svg> 
+            </div>
+            <div class="col-6  d-flex flex-column gap-3 theCenter-content" >
+              <span class="theCenter-span wow bounceInUp " data-wow-duration="2s">Where work and play come together</span>
+              <h2 class="theCenter-h2 wow bounceInUp " data-wow-duration="2.7s"><span>The Center</span> for Early <br>Childhood Education</h2>
+              <p class="theCenter-p wow bounceInUp " data-wow-duration="2.8s">We provide an innovative, nurturing and stimulating environment where children develop independence, confidence and a positive sense of self and the world around them. Our curriculum is designed to involve children in experiences that enhance language, literacy, music, movement, art and socialization. Through play, all areas of development are fostered.</p>
+              <a href="#" class="theCenter-a wow bounceInUp " data-wow-duration="3s">read more <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+              
+            </div>
+        
+          </div>
+      
+      </div>
+     </section>
+     <!-- end of theCenter -------------------------------------- -->
+
+     <!-- Start of EducationalPrograms  -------------------------------------- -->
+        <section class="EducationalPrograms ">
+          <div class="container d-flex flex-column align-items-center justify-content-center">
+            <div class="EducationalPrograms-content  ">
+              <span class="EducationalPrograms-span wow bounceInUp " data-wow-duration="3s">We are dedicated to the care and education</span>
+              <h2 class="EducationalPrograms-h2 wow bounceInUp " data-wow-duration="2.7s">Our Educational Programs</h2>
+              <p class="EducationalPrograms-p wow bounceInUp " data-wow-duration="3s">Our exclusive curricula, combined with our own digital lesson planning tool, enable teachers to create personalized learning experiences, appropriate to every age group.</p>
+            </div>
+
+          </div>
+          <!-- -->
+          <div class="container py-3">
+          <div id="EducationalProgramsCarousel" class="carousel slide   w-100 wow bounceInUp " data-bs-ride="carousel" data-wow-duration="3.5s" data-bs-interval="2500" >
+            <div class="carousel-indicators">
+              <button  type="button" data-bs-target="#EducationalProgramsCarousel" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#EducationalProgramsCarousel" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+              <button type="button" data-bs-target="#EducationalProgramsCarousel" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+              <button type="button" data-bs-target="#EducationalProgramsCarousel" data-bs-slide-to="3" aria-label="Slide 4" ></button>
+            </div>
+            <div class="carousel-inner  w-100 ">
+              <div class="carousel-item   active w-100 ">
+            
+              <div class="row px-3 first-item d-flex justify-content-center w-100">
+               
+                  <div class="col infants-div p-0">
+                    <div class="EducationalPrograms-img">
+                      <img src="./assets/img/EducationalPrograms/infans1.jpg" alt="infants baby">
+                      <div class="over-img">
+                          <div class="over-img-content ">
+                            <p class="over-img-title ">Energy. Exitement. Motion. These are the qualities that define a toddler and they are used in this program to power positive learning experiences. </p>
+                            <div class="over-img-animated">
+                            <p class="over-img-details"><span>Enrollment:</span>10</p>
+                            <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                            <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                            </div>
+                          </div>
+
+                      </div>
+                    </div>
+                    <div class="EducationalPrograms-title ">
+                      <p class=" d-flex align-items-center justify-content-between gap-2">
+                        Infants
+                        <span class="infants-age">3-12</span>
+                        <span class="old">Months</span>
+                      </p>
+                    </div>
+                  </div>
+                
+                
+                  <div class="col toddler-div p-0">
+                    <div class="EducationalPrograms-img">
+                      <img src="./assets/img/EducationalPrograms/toddler-1.jpg" alt="toddler baby">
+                      <div class="over-img">
+                          <div class="over-img-content ">
+                            <p class="over-img-title ">Energy. Exitement. Motion. These are the qualities that define a toddler and they are used in this program to power positive learning experiences. </p>
+                            <div class="over-img-animated">
+                            <p class="over-img-details"><span>Enrollment:</span>10</p>
+                            <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                            <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                            </div>
+                          </div>
+
+                      </div>
+                    </div>
+                    <div class="EducationalPrograms-title ">
+                      <p class=" d-flex align-items-center justify-content-between gap-2">
+                        Toddler
+                        <span class="toddler-age">1-3</span>
+                        <span class="old">Months</span>
+                      </p>
+                    </div>
+                  </div>
+                
+                
+                 
+                    <div class="col preschool-div p-0">
+                      <div class="EducationalPrograms-img">
+                        <img src="./assets/img/EducationalPrograms/preschool1.jpg" alt="preschool baby">
+                        <div class="over-img">
+                            <div class="over-img-content ">
+                              <p class="over-img-title ">Students will receive traditional education in science, engineering, the arts, and math and will be tracked academically and socially through continuous assessments. </p>
+                              <div class="over-img-animated">
+                              <p class="over-img-details"><span>Enrollment:</span>12</p>
+                              <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                              <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                              </div>
+                            </div>
+  
+                        </div>
+                      </div>
+                      <div class="EducationalPrograms-title ">
+                        <p class=" d-flex align-items-center justify-content-between gap-2">
+                          Preschool
+                          <span class="preschool-age">3-4</span>
+                          <span class="old">Years</span>
+                        </p>
+                      </div>
+                    </div>
+                  
+                
+              </div>
+              </div>
+
+               <div class="carousel-item    w-100">
+                 <div class="row px-1 second-item d-flex justify-content-center w-100">
+
+                 
+                 
+                    <div class="col toddler-div p-0">
+                      <div class="EducationalPrograms-img">
+                        <img src="./assets/img/EducationalPrograms/toddler-1.jpg" alt="toddler baby">
+                        <div class="over-img">
+                            <div class="over-img-content ">
+                              <p class="over-img-title ">Energy. Exitement. Motion. These are the qualities that define a toddler and they are used in this program to power positive learning experiences. </p>
+                              <div class="over-img-animated">
+                              <p class="over-img-details"><span>Enrollment:</span>10</p>
+                              <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                              <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                              </div>
+                            </div>
+  
+                        </div>
+                      </div>
+                      <div class="EducationalPrograms-title ">
+                        <p class=" d-flex align-items-center justify-content-between gap-2">
+                          Toddler
+                          <span class="toddler-age">1-3</span>
+                          <span class="old">Months</span>
+                        </p>
+                      </div>
+                    </div>
+                 
+                   
+                      <div class="col preschool-div p-0">
+                        <div class="EducationalPrograms-img">
+                          <img src="./assets/img/EducationalPrograms/preschool1.jpg" alt="preschool baby">
+                          <div class="over-img">
+                              <div class="over-img-content ">
+                                <p class="over-img-title ">Students will receive traditional education in science, engineering, the arts, and math and will be tracked academically and socially through continuous assessments. </p>
+                                <div class="over-img-animated">
+                                <p class="over-img-details"><span>Enrollment:</span>12</p>
+                                <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                                <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                                </div>
+                              </div>
+    
+                          </div>
+                        </div>
+                        <div class="EducationalPrograms-title ">
+                          <p class=" d-flex align-items-center justify-content-between gap-2">
+                            Preschool
+                            <span class="preschool-age">3-4</span>
+                            <span class="old">Years</span>
+                          </p>
+                        </div>
+                      </div>
+                    
+                  
+                 
+                    <div class="col preKindergarten-div p-0">
+                      <div class="EducationalPrograms-img">
+                        <img src="./assets/img/EducationalPrograms/toddler2.jpg" alt="preKindergarten baby">
+                        <div class="over-img">
+                            <div class="over-img-content ">
+                              <p class="over-img-title ">This program preps your child with lessons in forming and maintaining a positive attitude towards independent learning, and mastering gross as well as fine motor skills. </p>
+                              <div class="over-img-animated">
+                              <p class="over-img-details"><span>Enrollment:</span>12</p>
+                              <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                              <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                              </div>
+                            </div>
+  
+                        </div>
+                      </div>
+                      <div class="EducationalPrograms-title Pre-Kindergarten ">
+                        <p class="  d-flex align-items-center justify-content-center gap-3">
+                          Pre-<br>Kindergarten
+                          <span class="preKindergarten-age">1-3</span>
+                          <span class="old">Years</span>
+                        </p>
+                      </div>
+                    </div>
+                 </div> 
+                </div>
+            
+
+              <div  class="carousel-item ">
+                 
+                <div class="row px-3 third-item d-flex justify-content-center w-100">
+                  
+                      <div class="col preschool-div  p-0">
+                        <div class="EducationalPrograms-img">
+                          <img src="./assets/img/EducationalPrograms/preschool1.jpg" alt="preschool baby">
+                          <div class="over-img">
+                              <div class="over-img-content ">
+                                <p class="over-img-title ">Students will receive traditional education in science, engineering, the arts, and math and will be tracked academically and socially through continuous assessments. </p>
+                                <div class="over-img-animated">
+                                <p class="over-img-details"><span>Enrollment:</span>12</p>
+                                <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                                <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                                </div>
+                              </div>
+    
+                          </div>
+                        </div>
+                        <div class="EducationalPrograms-title ">
+                          <p class=" d-flex align-items-center justify-content-between gap-2">
+                            Preschool
+                            <span class="preschool-age">3-4</span>
+                            <span class="old">Years</span>
+                          </p>
+                        </div>
+                      </div>
+                    
+                 
+                    <div class="col preKindergarten-div  p-0">
+                      <div class="EducationalPrograms-img">
+                        <img src="./assets/img/EducationalPrograms/toddler2.jpg" alt="preKindergarten baby">
+                        <div class="over-img">
+                            <div class="over-img-content ">
+                              <p class="over-img-title ">This program preps your child with lessons in forming and maintaining a positive attitude towards independent learning, and mastering gross as well as fine motor skills. </p>
+                              <div class="over-img-animated">
+                              <p class="over-img-details"><span>Enrollment:</span>12</p>
+                              <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                              <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                              </div>
+                            </div>
+  
+                        </div>
+                      </div>
+                      <div class="EducationalPrograms-title Pre-Kindergarten">
+                        <p class="  d-flex align-items-center justify-content-center gap-3">
+                          Pre-<br>Kindergarten
+                          <span class="preKindergarten-age">1-3</span>
+                          <span class="old">Years</span>
+                        </p>
+                      </div>
+                    </div>
+                  
+                  
+                    <div class="infants-div col  p-0">
+                      <div class="EducationalPrograms-img">
+                        <img src="./assets/img/EducationalPrograms/infans1.jpg" alt="infants baby">
+                        <div class="over-img">
+                            <div class="over-img-content ">
+                              <p class="over-img-title ">Energy. Exitement. Motion. These are the qualities that define a toddler and they are used in this program to power positive learning experiences. </p>
+                              <div class="over-img-animated">
+                              <p class="over-img-details"><span>Enrollment:</span>10</p>
+                              <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                              <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                              </div>
+                            </div>
+  
+                        </div>
+                      </div>
+                      <div class="EducationalPrograms-title ">
+                        <p class=" d-flex align-items-center justify-content-between gap-2">
+                          Infants
+                          <span class="infants-age">3-12</span>
+                          <span class="old">Months</span>
+                        </p>
+                      </div>
+                    </div>
+                  
+              </div>
+            </div>
+             
+             <div class="carousel-item  ">
+                 
+              <div class="row px-3 forth-item d-flex justify-content-center w-100">  
+                  
+                 
+                    <div class="col preKindergarten-div p-0">
+                      <div class="EducationalPrograms-img">
+                        <img src="./assets/img/EducationalPrograms/toddler2.jpg" alt="preKindergarten baby">
+                        <div class="over-img">
+                            <div class="over-img-content ">
+                              <p class="over-img-title ">This program preps your child with lessons in forming and maintaining a positive attitude towards independent learning, and mastering gross as well as fine motor skills. </p>
+                              <div class="over-img-animated">
+                              <p class="over-img-details"><span>Enrollment:</span>12</p>
+                              <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                              <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                              </div>
+                            </div>
+  
+                        </div>
+                      </div>
+                      <div class="EducationalPrograms-title Pre-Kindergarten">
+                        <p class="  d-flex align-items-center justify-content-center gap-3">
+                          Pre-<br>Kindergarten
+                          <span class="preKindergarten-age">1-3</span>
+                          <span class="old">Years</span>
+                        </p>
+                      </div>
+                    </div>
+                  
+                
+                    <div class="col infants-div  p-0">
+                      <div class="EducationalPrograms-img">
+                        <img src="./assets/img/EducationalPrograms/infans1.jpg" alt="infants baby">
+                        <div class="over-img">
+                            <div class="over-img-content ">
+                              <p class="over-img-title ">Energy. Exitement. Motion. These are the qualities that define a toddler and they are used in this program to power positive learning experiences. </p>
+                              <div class="over-img-animated">
+                              <p class="over-img-details"><span>Enrollment:</span>10</p>
+                              <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                              <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                              </div>
+                            </div>
+  
+                        </div>
+                      </div>
+                      <div class="EducationalPrograms-title ">
+                        <p class=" d-flex align-items-center justify-content-between gap-2">
+                          Infants
+                          <span class="infants-age">3-12</span>
+                          <span class="old">Months</span>
+                        </p>
+                      </div>
+                    </div>
+                  
+
+                
+                    <div class="col toddler-div  p-0">
+                      <div class="EducationalPrograms-img">
+                        <img src="./assets/img/EducationalPrograms/toddler-1.jpg" alt="toddler baby">
+                        <div class="over-img">
+                            <div class="over-img-content ">
+                              <p class="over-img-title ">Energy. Exitement. Motion. These are the qualities that define a toddler and they are used in this program to power positive learning experiences. </p>
+                              <div class="over-img-animated">
+                              <p class="over-img-details"><span>Enrollment:</span>10</p>
+                              <p class="over-img-details pb-2"><span>Staff Ratio: </span>1 to 5</p>
+                              <a href="#" class="over-img-a" >book a tour <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                              </div>
+                            </div>
+  
+                        </div>
+                      </div>
+                      <div class="EducationalPrograms-title ">
+                        <p class=" d-flex align-items-center justify-content-between gap-2">
+                          Toddler
+                          <span class="toddler-age">1-3</span>
+                          <span class="old">Months</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>  
+
+
+
+              </div>
+              
+
+            </div>
+           </div>
+          </div>
+
+        </section>
+     <!-- End of EducationalPrograms  -------------------------------------- -->
+      
+     <!-- start of Elements of Learning -->
+           <section class="ElementsofLearning my-5 py-5">
+            <div class="container">
+              <div class="row row-gap-5 justify-content-between">
+                <div class="col-lg-6 col-md-12 wow bounceInLeft " data-wow-duration="2s">
+                  <div class="d-flex flex-column gap-3 ElementsofLearning-left-div">
+                  <span class="theCenter-span ">We provide the main activities</span>
+                  <h2 class="theCenter-h2 "><span>Elements</span> of Learning. <br>Committed to Excellence</h2>
+                  <p class="theCenter-p ">Our curriculum is based on the research of the most renowned education experts. Designed by our education team, it’s created to support these important early years, to inspire children to be bold explorers today and joyful, confident learners for life.<br><br>We believe that children learn best through play and are inspired by child based learning. We have several different areas of play in each of our groups.</p>
+                  <a href="#" class="theCenter-a ">read more <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-12 wow bounceInUp " data-wow-duration="2s">
+                <div class="ElementsofLearning-img">
+                   <div class="ElementsofLearning-img-content">
+                    <a href="#">
+                      <div class="top-link top-link1" id="link1">
+                        <div class="learninglink-img">
+                        <img src="./assets/img/learning/gardering.svg" alt="gardering">
+                        </div>
+                        <span>Gardering</span>
+                      </div>
+                      
+                      <div class="ElementsofLearning-content text-center Gardering-content" id="Gardering-content">
+                        <h3>Gardering</h3>
+                        <p>The Toddler and Preschool Groups have a garden in their outdoor space. Each spring, the children and teachers contribute and create beautiful and educational container/raised bed gardens.</p>
+
+                      </div>
+                      
+                    </a>
+                    <a href="#">
+                      <div class="top-link top-link2">
+                      <div class="learninglink-img">
+                        <img src="./assets/img/learning/sport.svg" alt="sport">
+                        </div>
+                        <span>Sport</span>
+                      </div>
+                      <div class="ElementsofLearning-content text-center sport-content">
+                        <h3>Sport</h3>
+                        <p>Children need to develop large motor and small motor skills and cardiovascular endurance. Extensive physical activity is also needed to address a growing problem of obesity in American children.</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="top-link top-link3">
+                        <div class="learninglink-img">
+                          <img src="./assets/img/learning/art.svg" alt="Art">
+                          </div>
+                          <span>Art</span>
+                      </div>
+                      <div class="ElementsofLearning-content text-center art-content">
+                        <h3>Art</h3>
+                        <p>Kids will love designing and creating puppets and collages, constructing musical instruments and flower bouquets, and painting, gluing, and crafting to their hearts’ content!</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="top-link top-link4">
+                        <div class="learninglink-img">
+                          <img src="./assets/img/learning/excursions.png" alt="excursions">
+                          </div>
+                          <span>Excursions</span>
+                      </div>
+                      <div class="ElementsofLearning-content text-center excursions-content">
+                        <h3>Excursions</h3>
+                        <p>Excursions form a vital part of a child’s early education. They expose a child to a range of different experiences and enable them to gain a sense of the world in which they find themselves.</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="top-link top-link5">
+                        <div class="learninglink-img">
+                          <img src="./assets/img/learning/outdoor.svg" alt="outdoor">
+                          </div>
+                          <span>Outdoor</span>
+                      </div>
+                      <div class="ElementsofLearning-content text-center outdoor-content">
+                        <h3>Outdoor</h3>
+                        <p>Our children benefit from a variety of outdoor play spaces. In addition to our playground, they experience the natural wonders of the forest, the big field, our raised gardens and nature walks.</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="top-link top-link6">
+                        <div class="learninglink-img">
+                          <img src="./assets/img/learning/math.svg" alt="math">
+                          </div>
+                          <span>Math</span>
+                      </div>
+                      <div class="ElementsofLearning-content text-center math-content">
+                        <h3>Math</h3>
+                        <p>A preschool math curriculum should be taught using preschool lessons including interactive activities, learning games, printable worksheets, assessments, and reinforcement.</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="top-link top-link7">
+                        <div class="learninglink-img">
+                          <img src="./assets/img/learning/literacy.svg" alt="literacy">
+                          </div>
+                          <span>Literacy</span>
+                      </div>
+                      <div class="ElementsofLearning-content text-center literacy-content">
+                        <h3>Literacy</h3>
+                        <p>A systematic and integrated literacy program promote language development preschool children. The program uses systematic, direct instruction built around a series of weekly books in the classroom.</p>
+                      </div>
+                    </a>
+                    
+                                           
+                      <div class="ElementsofLearning-content text-center start-content">
+                        <h3>Curriculum<br>Elements</h3>
+                      </div>
+
+                    
+                   
+                    </div>
+                   </div>
+                   
+                </div>
+              </div>
+              </div>
+            
+          </section> 
+
+     <!-- end of Elements of Learning -->
+
+     <!-- start of Nurturing  -->
+           <section class="Nurturing mt-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="nurturing-content wow bounceInUp " data-wow-duration="2s">
+                  <h2 class="theCenter-h2 ">We Create a Nurturing<br>Environment <span>for Each Child</span></h2>
+                  <p class="theCenter-p ">Thought open ended play based experiences children flourish, and grow to love their school, taking pride in belonging to a community</p>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                   
+                    <span class="play-span">
+                      <i class="fa-solid fa-play"></i>
+                    </span>
+                   
+                    read more</a>
+                </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <iframe  src="https://www.youtube.com/embed/NkfKechADow?si=grx_pZ66Qa3NuVFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            
+           </section>
+     <!-- end of Nurturing  -->
+
+      <!-- start of whyChoose  -->
+     <section class="whyChoose">
+      <div class="container">
+        <div class="row text-center justify-content-center align-items-center  p-0 g-0 ">
+          <div class="col-12">
+            <div class="whychoose-header wow bounceInUp " data-wow-duration="2s">
+              <span>Read on to understand our differene</span>
+              <h2 >Why Choose ChildiT</h2>
+             
+            </div>
+            <ul class="py-5 d-flex   align-items-center flex-wrap g-0 wow bounceInUp " data-wow-duration="2.5s">
+              <li class="py-5 px-3 whyChoose-item d-flex  justify-content-center align-items-start gap-2">
+                <div class="number">
+                  01.
+                </div>
+                <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                  <h3>Home-like Environment</h3>
+                  <p>Children are comfortable and confident in their home, feeling safe and secure to explore and learn.</p>
+              
+                </div>
+              </li>
+              <li class="py-5 px-3 d-flex  justify-content-center align-items-start gap-2">
+                <div class="number">
+                  02.
+                </div>
+                <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                  <h3>Loving Language</h3>
+                  <p>90% success rate of children reading before they go to school for children attending more than 12 months.</p>
+              
+                </div>
+              </li>
+              <li class="py-5 px-3 whyChoose-item d-flex  justify-content-center align-items-start gap-2">
+                <div class="number">
+                  03.
+                </div>
+                <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                  <h3>30 Day Moneyback Guarantee</h3>
+                  <p>If you’re not completely satisfied we will refund your money, no questions asked.</p>
+              
+                </div>
+              </li>
+              <li class="py-5 px-3 d-flex  justify-content-center align-items-start gap-2">
+                <div class="number">
+                  04.
+                </div>
+                <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                  <h3>Culture of Honour</h3>
+                  <p>We aim to help all people that come into contact with ChildiT to feel Significant, Appreciated and Understood.</p>
+              
+                </div>
+              </li>
+              <li class="py-5 px-3 whyChoose-item d-flex  justify-content-center align-items-start gap-2">
+                <div class="number">
+                  05.
+                </div>
+                <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                  <h3>Orientation Process</h3>
+                  <p>Makes the process of you and your child settling into care with ChildiT that much smoother.</p>
+              
+                </div>
+              </li>
+              <li class="py-5 px-3 d-flex  justify-content-center align-items-start gap-2">
+                <div class="number">
+                  06.
+                </div>
+                <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                  <h3>Quality Educators</h3>
+                  <p>Trusted, highly trained and hand-picked Educators. We believe that educators play a huge role in quality child care.</p>
+              
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+     </section>
+      <!-- end of whyChoose  -->
+
+     <!-- start of Food  -->
+         <section class="food d-flex justify-content-center align-items-center  ">
+          <div class="container py-5">
+            <div class="row gap-5  justify-content-center">
+              <div class="col-6  d-flex flex-column gap-3 food-content wow bounceInLeft " data-wow-duration="2s" >
+                <span class="theCenter-span">Children need healthy, wholesome foods</span>
+                <h2 class="theCenter-h2 "><span>Healthy</span> Food for Growing<br>Children</h2>
+                <p class="theCenter-p ">By eating family-style and serving themselves, children learn about making healthy choices and the connection between food and community.</p>
+                
+                <div class="row justify-content-center gx-3 flex-nowrap">
+                  <div class="col">
+                    <div class="food-item">
+                      <img src="./assets/img/food/fruits.png" alt="fruits">
+                      <p>Fruits</p>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="food-item">
+                      <img src="./assets/img/food/vegetables.png" alt="Vegetables">
+                      <p>Vegetables</p>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="food-item">
+                      <img src="./assets/img/food/grains.png" alt="Grains">
+                      <p>Grains</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="food-img wow bounceInUp " data-wow-duration="1s">
+                <svg viewBox="0 0 526 502" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <mask id="img1-food" maskUnits="userSpaceOnUse" x="0" y="0" width="526" height="502">
+                    <path d="M51 8.49999C125.8 -21.9 276.833 39.8333 343 74.5C288.5 32.5 323 18.5 347 20.5C371 22.5 432.5 44.5 467.5 68C495.5 86.8 491.167 99.8333 485.5 104C489.333 108.333 499.7 121.5 510.5 139.5C524 162 532.5 183.5 517 210C504.6 231.2 446.833 231.833 421 229.5C419.667 229.5 422.4 233.9 444 251.5C471 273.5 495.5 299.5 493.5 330.5C491.9 355.3 436.833 363.833 409.5 365C410.5 368.5 409.8 376.9 399 382.5C388.2 388.1 355.833 387.5 341 386.5C364.167 399 410.3 428.9 409.5 448.5C408.5 473 386.5 492 344 488C301.5 484 238 444.5 250 452.5C262 460.5 280 481.5 271.5 492C263 502.5 236 504.5 216.5 496C197 487.5 81.5 440.5 67.5 397.5C53.5 354.5 83.5 367 81.5 359.5C79.5 352 53 346.5 25.5 293C3.50001 250.2 34.5 226.5 58 224.5C54.8333 224.5 40.3 217.8 23.5 191C6.7 164.2 25.8333 142.5 37.5 135C35.5 133.167 30.6 128.6 27 125C22.5 120.5 -42.5 46.5 51 8.49999Z" fill="#C4C4C4"></path>
+                  </mask>
+                  <g mask="url(#img1-food)">
+                    <rect y="-13" width="750" height="523" fill="url(#pattern-food-children)"></rect>
+                  </g>
+                  <defs>
+                    <pattern id="pattern-food-children" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#for-img1-food" transform="scale(0.00133333 0.00191205)"></use>
+                    </pattern>
+                    <image id="for-img1-food" width="750" height="523" xlink:href="https://smartdata.tonytemplates.com/childit/wp-content/uploads/2019/09/children-food.jpg">
+                    </image>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+         </section>
+      <!-- end of Food -->
+
+      <!-- start of about us -->
+         <section class="about-us    ">
+          <div class="container text-center  d-flex flex-column justify-content-center align-items-center   wow bounceInUp " data-wow-duration="2s">
+            <span>Want to know more about us?</span>
+            <h2>Centre Information</h2>
+            <ul class="nav  mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item d-flex " role="presentation">
+                <button class="nav-link  active" id="pills-OurPhilosophy-tab" data-bs-toggle="pill" data-bs-target="#pills-OurPhilosophy" type="button" role="tab" aria-controls="pills-OurPhilosophy" aria-selected="true">Our Philosophy</button>
+                <div class="vr h-25  mt-2"></div>
+              </li>
+              <li class="nav-item d-flex" role="presentation">
+                <button class="nav-link" id="pills-OurValues-tab" data-bs-toggle="pill" data-bs-target="#pills-OurValues" type="button" role="tab" aria-controls="pills-OurValues" aria-selected="false">Our Values</button>
+                <div class="vr h-25  mt-2"></div>
+              </li>
+              <li class="nav-item d-flex" role="presentation">
+                <button class="nav-link" id="pills-OurTeachers-tab" data-bs-toggle="pill" data-bs-target="#pills-OurTeachers" type="button" role="tab" aria-controls="pills-OurTeachers" aria-selected="false">Our Teachers</button>
+                <div class="vr h-25  mt-2"></div>
+              </li>
+              <li class="nav-item d-flex" role="presentation">
+                <button class="nav-link" id="pills-ParentsSay-tab" data-bs-toggle="pill" data-bs-target="#pills-ParentsSay" type="button" role="tab" aria-controls="pills-ParentsSay" aria-selected="false">Parents Say</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class=" d-flex flex-column justify-content-start align-items-center tab-pane fade show active" id="pills-OurPhilosophy" role="tabpanel" aria-labelledby="pills-OurPhilosophy-tab" tabindex="0">
+                <div class="tab-head">
+                  <p>We believe children learn by building on the knowledge they already have – primarily exhibited through play. Teachers help children learn by creating a rich environment to explore via exciting educational activities.</p>
+                </div>
+                <div class="container first-container">
+
+                <div class="tab-internal-content  d-flex  justify-content-center align-items-start gap-3">
+                 <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+
+                  <div class="number">
+                    01.
+                  </div>
+                  <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                    <h3>Image of the child</h3>
+                    <p>Teachers can then shape and build on that knowledge by discovering what children already know through observation, one-on-one conversation, clarification, and invitation to explore the world around them.</p>
+                
+                  </div>
+                </div>
+                <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+                  <div class="number">
+                    02.
+                  </div>
+                  <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                    <h3>Positive Discipline</h3>
+                    <p>Spanking or other methods of corporal punishment are never to be used as a means of disciplining students. This no spanking policy extends to parents with their own children while at school or school sponsored events.</p>
+                
+                  </div>
+                  </div>
+                  <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+                  <div class="number">
+                    03.
+                  </div>
+                  <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                    <h3>Environment is important</h3>
+                    <p>We like to work and play in attractive surroundings so our buildings are clean, relatively tidy, and pleasing to the eye. The outdoor environments are large, have colourful and interesting gardens, and a variety of activities.</p>
+                
+                  </div>
+                  </div>
+                </div>
+
+               
+                </div>
+                <div class="container second-container">
+                  <div id="ourPhilosophyCarousel" class="ourPhilosophyCarousel carousel slide  "   data-bs-ride="carousel" data-bs-interval="2500" >
+                    <div class="carousel-indicators">
+                      <button  type="button" data-bs-target="#ourPhilosophyCarousel" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#ourPhilosophyCarousel" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+                      <button  type="button" data-bs-target="#ourPhilosophyCarousel" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+                    </div>
+                    <div class="carousel-inner  w-100 ">
+                      <div class="carousel-item   active w-100 ">
+                    
+                      <div class="row px-3 py-4 first-item d-flex justify-content-center w-100">
+                       
+                          <div class="col number1-div  p-0">
+                            <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+  
+                              <div class="number">
+                                01.
+                              </div>
+                              <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                                <h3>Image of the child</h3>
+                                <p>Teachers can then shape and build on that knowledge by discovering what children already know through observation, one-on-one conversation, clarification, and invitation to explore the world around them.</p>
+                            
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
+                          <div class="col number2-div p-0">
+                            <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+                              <div class="number">
+                                02.
+                              </div>
+                              <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                                <h3>Positive Discipline</h3>
+                                <p>Spanking or other methods of corporal punishment are never to be used as a means of disciplining students. This no spanking policy extends to parents with their own children while at school or school sponsored events.</p>
+                            
+                              </div>
+                              </div>
+                          </div>
+                        
+                      </div>
+                      </div>
+         
+                       <div class="carousel-item    w-100">
+                        <div class="row px-3 py-4 second-item d-flex justify-content-center w-100">
+
+                          <div class="col number2-div p-0">
+                            <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+                              <div class="number">
+                                02.
+                              </div>
+                              <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                                <h3>Positive Discipline</h3>
+                                <p>Spanking or other methods of corporal punishment are never to be used as a means of disciplining students. This no spanking policy extends to parents with their own children while at school or school sponsored events.</p>
+                            
+                              </div>
+                              </div>
+                          </div>
+                        
+                        
+                         
+                            <div class="col number3-div p-0">
+                              <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+                                <div class="number">
+                                  03.
+                                </div>
+                                <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                                  <h3>Environment is important</h3>
+                                  <p>We like to work and play in attractive surroundings so our buildings are clean, relatively tidy, and pleasing to the eye. The outdoor environments are large, have colourful and interesting gardens, and a variety of activities.</p>
+                              
+                                </div>
+                                </div>
+                            </div>
+                          
+                        
+                      </div> 
+                        </div>
+                    
+        
+                      <div  class="carousel-item   w-100 ">
+                         
+                        <div class="row px-3 py-4 third-item d-flex justify-content-center w-100">
+                          
+                          <div class="col number3-div p-0">
+                            <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+                              <div class="number">
+                                03.
+                              </div>
+                              <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                                <h3>Environment is important</h3>
+                                <p>We like to work and play in attractive surroundings so our buildings are clean, relatively tidy, and pleasing to the eye. The outdoor environments are large, have colourful and interesting gardens, and a variety of activities.</p>
+                            
+                              </div>
+                              </div>
+                          </div>
+                          <div class="col number1-div  p-0">
+                            <div class="tab-internal-content-item  d-flex  justify-content-center align-items-start gap-2">
+  
+                              <div class="number">
+                                01.
+                              </div>
+                              <div class="item-details d-flex flex-column  text-start justify-content-start align-items-start gap-2">
+                                <h3>Image of the child</h3>
+                                <p>Teachers can then shape and build on that knowledge by discovering what children already know through observation, one-on-one conversation, clarification, and invitation to explore the world around them.</p>
+                            
+                              </div>
+                            </div>
+                          </div>
+                          
+                      </div>
+                    </div> 
+                     
+                     
+        
+        
+                      </div>
+                      
+        
+                    </div> 
+                </div>
+
+               
+                
+
+              </div>
+
+              <div class="tab-pane fade" id="pills-OurValues" role="tabpanel" aria-labelledby="pills-OurValues-tab" tabindex="0">
+                <div class="container">
+                  <div class="row gapy-1 gapx-3">
+                    <div class="col-12 col-sm-6">
+                      <div class="our-value-left">
+                        <img src="./assets/img/aboutUs/values.jpg" alt="children">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 ">
+                      <div class="our-value-right d-flex flex-column justify-content-start align-items-start text-start">
+                        <p>Positive, Safe Environment – We are committed to providing an uplifting and positive atmosphere for our children and staff; a fun learning experience in a secure, safe, and loving environment.</p>
+                        <div class="our-value-content d-flex gap-2">
+                          <span>></span>
+                          <p><span>Leadership</span>– We are committed to lead; developing, monitoring, and empowering our children and our staff to reach their full potential.</p>
+                        </div>
+                        <div class="our-value-content d-flex gap-2">
+                          <span>></span>
+                          <p><span>Excellence</span>– We are committed to achieve the greatest levels of excellence in childcare, in education and in everything we do; being highly professional, innovative, creative, efficient, and effective.</p>
+                        </div>
+                        <div class="our-value-content d-flex gap-2">
+                          <span>></span>
+                          <p><span>Respect</span>– We are committed to building strong, healthy relationships with each other, our children & their families, along with the community through communication and understanding of the cultures around us.</p>
+                        </div>
+                        <div class="our-value-content d-flex gap-2">
+                          <span>></span>
+                          <p><span>Integrity</span>– We are committed to carry out our mission.</p>
+                        </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class=" d-flex flex-column justify-content-start align-items-center  tab-pane fade" id="pills-OurTeachers" role="tabpanel" aria-labelledby="pills-OurTeachers-tab" tabindex="0">
+                <div class="tab-head">
+                  <p>We have a focus on recruiting and retaining quality teachers and offer competitive remuneration, good student discipline and relatively small class sizes</p>
+                </div>
+                <div class="tab-internal-content">
+                   <div class="container py-3">
+                    <div id="teachersCarousel" class="teachersCarousel carousel slide   " data-bs-ride="carousel" data-bs-interval="2500" >
+                      <div class="carousel-indicators">
+                        <button  type="button" data-bs-target="#teachersCarousel" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#teachersCarousel" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+                        <button type="button" data-bs-target="#teachersCarousel" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+                        <button type="button" data-bs-target="#teachersCarousel" data-bs-slide-to="3" aria-label="Slide 4" ></button>
+                      </div>
+                      <div class="carousel-inner  w-100 ">
+                        <div class="carousel-item   active w-100 ">
+                      
+                        <div class="row px-3  first-item d-flex justify-content-center w-100">
+                         
+                            <div class="col teacher-div t1 p-0">
+                              
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Lindsay</h3>
+                                <span>Infant Classroom</span>
+                                <p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher1.jpg" alt="teacher Lindsay">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+
+                            <div class="col teacher-div t2 p-0">
+                              
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Kate</h3>
+                                <span>Infant Classroom</span>
+                                <p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher2.jpg" alt="teacher Kate">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+
+                            <div class="col teacher-div t3 p-0">
+                              
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Maria</h3>
+                                <span>Lead Teacher</span>
+                                <p>Maria has a Masters degree in Early Childhood Education, a Montessori certification for children ages 3-6.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher3.jpg" alt="teacher Maria">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+                          
+                          
+
+                        </div>
+                        </div>
+          
+                         <div class="carousel-item    w-100">
+                           <div class="row px-1 second-item d-flex justify-content-center w-100">
+          
+                           
+
+                            <div class="col teacher-div t2 p-0">
+                              
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Kate</h3>
+                                <span>Infant Classroom</span>
+                                <p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher2.jpg" alt="teacher Kate">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+
+                            <div class="col teacher-div t3 p-0">
+                              
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Maria</h3>
+                                <span>Lead Teacher</span>
+                                <p>Maria has a Masters degree in Early Childhood Education, a Montessori certification for children ages 3-6.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher3.jpg" alt="teacher Maria">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+
+                            <div class="col teacher-div t4 p-0">
+                              
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Maria</h3>
+                                <span>Lead Teacher</span>
+                                <p>Maria has a Masters degree in Early Childhood Education, a Montessori certification for children ages 3-6.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher4.jpg" alt="teacher Maria">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+                          
+                           
+                              
+                           </div> 
+                          </div>
+                      
+          
+                          <div  class="carousel-item ">
+                            
+                            <div class="row px-3 third-item d-flex justify-content-center w-100">
+                              <div class="col teacher-div t3 p-0">
+                                
+                                <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                  <h3>Maria</h3>
+                                  <span>Lead Teacher</span>
+                                  <p>Maria has a Masters degree in Early Childhood Education, a Montessori certification for children ages 3-6.</p>
+                                  
+                                    <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                      <li><a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                      </a></li>
+                                      <li>
+                                        <a href="#">
+                                          <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                          <i class="fa-brands fa-twitter"></i>
+                                        </a></li>
+                                      <li>
+                                        <a href="#">
+                                          <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                          <i class="fa-brands fa-instagram"></i>
+                                        </a></li>
+                                      
+                                    </ul>
+                                    <div class="teacher-img">
+                                      <img src="./assets/img/aboutUs/teacher3.jpg" alt="teacher Maria">
+                                      
+                                    </div>
+                                </div>
+                                
+                                
+                              </div>
+
+                              <div class="col teacher-div t4 p-0">
+                                
+                                <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                  <h3>Maria</h3>
+                                  <span>Lead Teacher</span>
+                                  <p>Maria has a Masters degree in Early Childhood Education, a Montessori certification for children ages 3-6.</p>
+                                  
+                                    <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                      <li><a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                      </a></li>
+                                      <li>
+                                        <a href="#">
+                                          <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                          <i class="fa-brands fa-twitter"></i>
+                                        </a></li>
+                                      <li>
+                                        <a href="#">
+                                          <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                          <i class="fa-brands fa-instagram"></i>
+                                        </a></li>
+                                      
+                                    </ul>
+                                    <div class="teacher-img">
+                                      <img src="./assets/img/aboutUs/teacher4.jpg" alt="teacher Maria">
+                                      
+                                    </div>
+                                </div>
+                                
+                                
+                              </div>
+                              <div class="col teacher-div t1 p-0">
+                                
+                                <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                  <h3>Lindsay</h3>
+                                  <span>Infant Classroom</span>
+                                  <p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+                                  
+                                    <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                      <li><a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                      </a></li>
+                                      <li>
+                                        <a href="#">
+                                          <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                          <i class="fa-brands fa-twitter"></i>
+                                        </a></li>
+                                      <li>
+                                        <a href="#">
+                                          <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                          <i class="fa-brands fa-instagram"></i>
+                                        </a></li>
+                                      
+                                    </ul>
+                                    <div class="teacher-img">
+                                      <img src="./assets/img/aboutUs/teacher1.jpg" alt="teacher Lindsay">
+                                      
+                                    </div>
+                                </div>
+                                
+                                
+                              </div>
+                              
+                              
+                          </div>
+                        </div>
+                        
+                        <div class="carousel-item  ">
+                            
+                          <div class="row px-3 forth-item d-flex justify-content-center w-100">  
+                            <div class="col teacher-div t4 p-0">
+                                
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Maria</h3>
+                                <span>Lead Teacher</span>
+                                <p>Maria has a Masters degree in Early Childhood Education, a Montessori certification for children ages 3-6.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher4.jpg" alt="teacher Maria">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+                            <div class="col teacher-div t1 p-0">
+                              
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Lindsay</h3>
+                                <span>Infant Classroom</span>
+                                <p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher1.jpg" alt="teacher Lindsay">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+                            <div class="col teacher-div t2 p-0">
+                                
+                              <div class="teacher-details p-3 text-start gap-2 d-flex flex-column justify-content-start align-items-start">
+                                <h3>Kate</h3>
+                                <span>Infant Classroom</span>
+                                <p>She has never tired of the “ah-ha” moments and the pride that swells in a little one who is learning to do something for the first time.</p>
+                                
+                                  <ul class="d-flex text-start p-0 justify-content-start align-items-center gap-3">
+                                    <li><a href="#">
+                                      <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                                      <i class="fa-brands fa-facebook-f"></i>
+                                    </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                      </a></li>
+                                    <li>
+                                      <a href="#">
+                                        <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                      </a></li>
+                                    
+                                  </ul>
+                                  <div class="teacher-img">
+                                    <img src="./assets/img/aboutUs/teacher2.jpg" alt="teacher Kate">
+                                    
+                                  </div>
+                              </div>
+                              
+                              
+                            </div>
+                            
+                              </div>
+                          </div>  
+          
+          
+          
+                        </div>
+                        
+          
+                      </div>
+                     </div>
+                </div>
+              </div>
+              <div class="parentSay d-flex flex-column justify-content-start align-items-center tab-pane fade" id="pills-ParentsSay" role="tabpanel" aria-labelledby="pills-ParentsSay-tab" tabindex="0">
+                <div class="tab-head">
+                  <p>We have a focus on recruiting and retaining quality teachers and offer competitive remuneration, good student discipline and relatively small class sizes</p>
+                </div>
+                <div class="tab-internal-content">
+                  <div class="container first-container">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="parentSay-item">
+                        <div class="parentsSay-img mb-2">
+                          <img src="./assets/img/aboutUs/testimonials1.svg" alt="parentsSay">
+                        </div>
+                        <div class="parentsSay-details d-flex flex-column gap-3">
+                          <h3>Constance Robinson</h3>
+                          <time>October 3, 2019</time>
+                          <p>“My daughter has attended 3 preschools all which were good but ChildIt excelled them all. Her teacher Maria is excellent my daughter thrives well and continues to learn more every day”.</p>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col-md-4">
+                        <div class="parentSay-item">
+                        <div class="parentsSay-img mb-2">
+                        <img src="./assets/img/aboutUs/testimonials2.svg" alt="parentsSay">
+                        </div>
+                        <div class="parentsSay-details d-flex flex-column gap-3">
+                          <h3>Jeffrey Sweeney</h3>
+                          <time>October 3, 2019</time>
+                          <p>“During the art chapter in ChildIt my son has been so engaged and excited. He comes home and teaches our family the artists’ names and speaks about what kind of techniques each artist used. It’s been a joy and a learning experience for all of us”.</p>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="parentSay-item">
+                        <div class="parentsSay-img mb-2">
+                        <img src="./assets/img/aboutUs/testimonials3.svg" alt="parentsSay">
+                        </div>
+                        <div class="parentsSay-details d-flex flex-column gap-3">
+                          <h3>Chris Rutherford</h3>
+                          <time>October 3, 2019</time>
+                          <p>“During the art chapter in ChildIt my son has been so engaged and excited. He comes home and teaches our family the artists’ names and speaks about what kind of techniques each artist used. It’s been a joy and a learning experience for all of us”.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  
+                    <div class="view-more pt-5">
+                      <a href="#" class="theCenter-a ">view more <i class="fa-solid fa-arrow-right ps-2 "></i></a>
+                    </div>
+                  </div>
+
+
+                  <div class="container second-container">
+                    <div id="ourPhilosophyCarousel" class="ourPhilosophyCarousel carousel slide  "   data-bs-ride="carousel" data-bs-interval="2500" >
+                      <div class="carousel-indicators">
+                        <button  type="button" data-bs-target="#ourPhilosophyCarousel" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#ourPhilosophyCarousel" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+                        <button  type="button" data-bs-target="#ourPhilosophyCarousel" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+                      </div>
+                      <div class="carousel-inner  w-100 ">
+                        <div class="carousel-item   active w-100 ">
+                      
+                        <div class="row px-3 py-4 first-item d-flex justify-content-center w-100">
+                         
+                          
+                            <div class="col number1-div p-0">
+                              <div class="parentSay-item">
+                              <div class="parentsSay-img mb-2">
+                                <img src="./assets/img/aboutUs/testimonials1.svg" alt="parentsSay">
+                              </div>
+                              <div class="parentsSay-details d-flex flex-column gap-3">
+                                <h3>Constance Robinson</h3>
+                                <time>October 3, 2019</time>
+                                <p>“My daughter has attended 3 preschools all which were good but ChildIt excelled them all. Her teacher Maria is excellent my daughter thrives well and continues to learn more every day”.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col number2-div p-0">
+                            <div class="parentSay-item">
+                            <div class="parentsSay-img mb-2">
+                            <img src="./assets/img/aboutUs/testimonials2.svg" alt="parentsSay">
+                            </div>
+                            <div class="parentsSay-details d-flex flex-column gap-3">
+                              <h3>Jeffrey Sweeney</h3>
+                              <time>October 3, 2019</time>
+                              <p>“During the art chapter in ChildIt my son has been so engaged and excited. He comes home and teaches our family the artists’ names and speaks about what kind of techniques each artist used. It’s been a joy and a learning experience for all of us”.</p>
+                            </div>
+                          </div>
+                          </div>
+                          
+                          
+                        </div>
+                        </div>
+           
+                         <div class="carousel-item    w-100">
+                          <div class="row px-3 py-4 second-item d-flex justify-content-center w-100">
+  
+                            <div class="col number2-div p-0">
+                              <div class="parentSay-item">
+                              <div class="parentsSay-img mb-2">
+                              <img src="./assets/img/aboutUs/testimonials2.svg" alt="parentsSay">
+                              </div>
+                              <div class="parentsSay-details d-flex flex-column gap-3">
+                                <h3>Jeffrey Sweeney</h3>
+                                <time>October 3, 2019</time>
+                                <p>“During the art chapter in ChildIt my son has been so engaged and excited. He comes home and teaches our family the artists’ names and speaks about what kind of techniques each artist used. It’s been a joy and a learning experience for all of us”.</p>
+                              </div>
+                            </div>
+                            </div>
+                          
+                          
+                           
+                            <div class="col number3-div p-0">
+                              <div class="parentSay-item">
+                              <div class="parentsSay-img mb-2">
+                                <img src="./assets/img/aboutUs/testimonials3.svg" alt="parentsSay">
+                              </div>
+                              <div class="parentsSay-details d-flex flex-column gap-3">
+                                <h3>Chris Rutherford</h3>
+                                <time>October 3, 2019</time>
+                                <p>“During the art chapter in ChildIt my son has been so engaged and excited. He comes home and teaches our family the artists’ names and speaks about what kind of techniques each artist used. It’s been a joy and a learning experience for all of us”.</p>
+                              </div>
+                            </div>
+                            </div>
+                            
+                          
+                        </div> 
+                          </div> 
+                      
+          
+                         <div  class="carousel-item   w-100 ">
+                           
+                          <div class="row px-3 py-4 third-item d-flex justify-content-center w-100">
+                            
+                            <div class="col number3-div p-0">
+                              <div class="parentSay-item">
+                              <div class="parentsSay-img mb-2">
+                                <img src="./assets/img/aboutUs/testimonials3.svg" alt="parentsSay">
+                              </div>
+                              <div class="parentsSay-details d-flex flex-column gap-3">
+                                <h3>Chris Rutherford</h3>
+                                <time>October 3, 2019</time>
+                                <p>“During the art chapter in ChildIt my son has been so engaged and excited. He comes home and teaches our family the artists’ names and speaks about what kind of techniques each artist used. It’s been a joy and a learning experience for all of us”.</p>
+                              </div>
+                            </div>
+                            </div>
+                            <div class="col number1-div p-0">
+                              <div class="parentSay-item">
+                              <div class="parentsSay-img mb-2">
+                                <img src="./assets/img/aboutUs/testimonials1.svg" alt="parentsSay">
+                              </div>
+                              <div class="parentsSay-details d-flex flex-column gap-3">
+                                <h3>Constance Robinson</h3>
+                                <time>October 3, 2019</time>
+                                <p>“My daughter has attended 3 preschools all which were good but ChildIt excelled them all. Her teacher Maria is excellent my daughter thrives well and continues to learn more every day”.</p>
+                              </div>
+                            </div>
+                          </div>
+                            
+                        </div>
+                      </div>  
+                       
+                       
+          
+          
+                        </div>
+                        
+          
+                      </div> 
+                  </div>
+                 
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          
+         </section>
+
+      <!-- end of about us -->
+
+      <!-- start of Latest News -->
+            <section class="LatestNews">
+                <div class="container text-center  d-flex flex-column justify-content-center align-items-center wow bounceInUp " data-wow-duration="2s">
+                  <span>what's new</span>
+                  <h2>Latest News</h2>
+
+                  
+                </div>
+
+                <div class="container py-3">
+                  <div id="LatestNewsCarousel" class="LatestNewsCarousel carousel slide  " data-bs-ride="carousel" data-bs-interval="2500" >
+                    <div class="carousel-indicators">
+                      <button  type="button" data-bs-target="#LatestNewsCarousel" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#LatestNewsCarousel" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+                      <button type="button" data-bs-target="#LatestNewsCarousel" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+                      <button type="button" data-bs-target="#LatestNewsCarousel" data-bs-slide-to="3" aria-label="Slide 4" ></button>
+                    </div>
+                    <div class="carousel-inner  w-100 ">
+                      <div class="carousel-item   active w-100 ">
+                    
+                      <div class="row px-3 first-item d-flex justify-content-center w-100">
+                       
+                          <div class="col new1 p-0">
+                            <div class="LatestNews-item">
+                            <div class="LatestNews-img">
+                              <a href="#"><img src="./assets/img/LatestNews/blog1.jpg" alt="the preschool money"></a>
+                            </div>
+                            <div class="LatestNews-details ">
+                              <div class="sub-details d-flex gap-3 ">
+                               <span>by <a href="#">Admin</a></span>
+                               <span>0 comment</span>
+                              </div>
+
+                              <div class="main-details d-flex flex-column gap-3 pt-3">
+                                <h3>The Preschool Money</h3>
+                                <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                                <a href="#"><time>September 13, 2019</time></a>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        
+                        
+                          <div class="col new2 p-0">
+                            
+                            <div class="LatestNews-item">
+                              <div class="LatestNews-img">
+                                <a href="#"><img src="./assets/img/LatestNews/blog2.jpg" alt="Dual-Language Learners"></a>
+                              </div>
+                              <div class="LatestNews-details ">
+                                <div class="sub-details d-flex gap-3 ">
+                                 <span>by <a href="#">Admin</a></span>
+                                 <span>0 comment</span>
+                                </div>
+  
+                                <div class="main-details d-flex flex-column gap-3 pt-3">
+                                  <h3>Dual-Language Learners</h3>
+                                  <p>The number of dual language learners in early childhood classrooms is …</p>
+                                  <a href="#"><time>September 25, 2019</time></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
+                         
+                            <div class="col new3 p-0">
+                              <div class="LatestNews-item">
+                                <div class="LatestNews-img">
+                                  <a href="#"><img src="./assets/img/LatestNews/blog3.jpg" alt="Dual-Language Learners"></a>
+                                </div>
+                                <div class="LatestNews-details ">
+                                  <div class="sub-details d-flex gap-3 ">
+                                   <span>by <a href="#">Admin</a></span>
+                                   <span>0 comment</span>
+                                  </div>
+    
+                                  <div class="main-details d-flex flex-column gap-3 pt-3">
+                                    <h3>Dual-Language Learners</h3>
+                                    <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                                    <a href="#"><time>September 25, 2019</time></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+                        
+                      </div>
+                      </div>
+        
+                        <div class="carousel-item    w-100">
+                         <div class="row px-1 second-item d-flex justify-content-center w-100">
+                          <div class="col new2 p-0">
+                            
+                            <div class="LatestNews-item">
+                              <div class="LatestNews-img">
+                                <a href="#"><img src="./assets/img/LatestNews/blog2.jpg" alt="Dual-Language Learners"></a>
+                              </div>
+                              <div class="LatestNews-details ">
+                                <div class="sub-details d-flex gap-3 ">
+                                 <span>by <a href="#">Admin</a></span>
+                                 <span>0 comment</span>
+                                </div>
+  
+                                <div class="main-details d-flex flex-column gap-3 pt-3">
+                                  <h3>Dual-Language Learners</h3>
+                                  <p>The number of dual language learners in early childhood classrooms is …</p>
+                                  <a href="#"><time>September 25, 2019</time></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
+                         
+                            <div class="col new3 p-0">
+                              <div class="LatestNews-item">
+                                <div class="LatestNews-img">
+                                  <a href="#"><img src="./assets/img/LatestNews/blog3.jpg" alt="Dual-Language Learners"></a>
+                                </div>
+                                <div class="LatestNews-details ">
+                                  <div class="sub-details d-flex gap-3 ">
+                                   <span>by <a href="#">Admin</a></span>
+                                   <span>0 comment</span>
+                                  </div>
+    
+                                  <div class="main-details d-flex flex-column gap-3 pt-3">
+                                    <h3>Dual-Language Learners</h3>
+                                    <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                                    <a href="#"><time>September 25, 2019</time></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col new4 p-0">
+                              <div class="LatestNews-item">
+                              <div class="LatestNews-img">
+                                <a href="#"><img src="./assets/img/LatestNews/blog4.jpg" alt="the preschool money"></a>
+                              </div>
+                              <div class="LatestNews-details ">
+                                <div class="sub-details d-flex gap-3 ">
+                                 <span>by <a href="#">Admin</a></span>
+                                 <span>0 comment</span>
+                                </div>
+  
+                                <div class="main-details d-flex flex-column gap-3 pt-3">
+                                  <h3>The Preschool Money</h3>
+                                  <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                                  <a href="#"><time>September 25, 2019</time></a>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                            
+                          
+                         
+                         
+                     
+                         </div> 
+                        </div> 
+                    
+        
+                       <div  class="carousel-item ">
+                         
+                        <div class="row px-3 third-item d-flex justify-content-center w-100">
+                          
+                          <div class="col new3 p-0">
+                            <div class="LatestNews-item">
+                              <div class="LatestNews-img">
+                                <a href="#"><img src="./assets/img/LatestNews/blog3.jpg" alt="Dual-Language Learners"></a>
+                              </div>
+                              <div class="LatestNews-details ">
+                                <div class="sub-details d-flex gap-3 ">
+                                 <span>by <a href="#">Admin</a></span>
+                                 <span>0 comment</span>
+                                </div>
+  
+                                <div class="main-details d-flex flex-column gap-3 pt-3">
+                                  <h3>Dual-Language Learners</h3>
+                                  <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                                  <a href="#"><time>September 25, 2019</time></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col new4 p-0">
+                            <div class="LatestNews-item">
+                            <div class="LatestNews-img">
+                              <a href="#"><img src="./assets/img/LatestNews/blog4.jpg" alt="the preschool money"></a>
+                            </div>
+                            <div class="LatestNews-details ">
+                              <div class="sub-details d-flex gap-3 ">
+                               <span>by <a href="#">Admin</a></span>
+                               <span>0 comment</span>
+                              </div>
+
+                              <div class="main-details d-flex flex-column gap-3 pt-3">
+                                <h3>The Preschool Money</h3>
+                                <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                                <a href="#"><time>September 25, 2019</time></a>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="col new1 p-0">
+                            <div class="LatestNews-item">
+                            <div class="LatestNews-img">
+                              <a href="#"><img src="./assets/img/LatestNews/blog1.jpg" alt="the preschool money"></a>
+                            </div>
+                            <div class="LatestNews-details ">
+                              <div class="sub-details d-flex gap-3 ">
+                               <span>by <a href="#">Admin</a></span>
+                               <span>0 comment</span>
+                              </div>
+
+                              <div class="main-details d-flex flex-column gap-3 pt-3">
+                                <h3>The Preschool Money</h3>
+                                <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                                <a href="#"><time>September 13, 2019</time></a>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                         
+                             
+                                 
+                          
+                      </div>
+                    </div> 
+                     
+                      <div class="carousel-item  ">
+                         
+                      <div class="row px-3 forth-item d-flex justify-content-center w-100">  
+                          
+                        <div class="col new4 p-0">
+                          <div class="LatestNews-item">
+                          <div class="LatestNews-img">
+                            <a href="#"><img src="./assets/img/LatestNews/blog4.jpg" alt="the preschool money"></a>
+                          </div>
+                          <div class="LatestNews-details ">
+                            <div class="sub-details d-flex gap-3 ">
+                             <span>by <a href="#">Admin</a></span>
+                             <span>0 comment</span>
+                            </div>
+
+                            <div class="main-details d-flex flex-column gap-3 pt-3">
+                              <h3>The Preschool Money</h3>
+                              <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                              <a href="#"><time>September 25, 2019</time></a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col new1 p-0">
+                          <div class="LatestNews-item">
+                          <div class="LatestNews-img">
+                            <a href="#"><img src="./assets/img/LatestNews/blog1.jpg" alt="the preschool money"></a>
+                          </div>
+                          <div class="LatestNews-details ">
+                            <div class="sub-details d-flex gap-3 ">
+                             <span>by <a href="#">Admin</a></span>
+                             <span>0 comment</span>
+                            </div>
+
+                            <div class="main-details d-flex flex-column gap-3 pt-3">
+                              <h3>The Preschool Money</h3>
+                              <p>Let us know what you think of today’s newsletter and what you’d like to …</p>
+                              <a href="#"><time>September 13, 2019</time></a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col new2 p-0">
+                            
+                          <div class="LatestNews-item">
+                            <div class="LatestNews-img">
+                              <a href="#"><img src="./assets/img/LatestNews/blog2.jpg" alt="Dual-Language Learners"></a>
+                            </div>
+                            <div class="LatestNews-details ">
+                              <div class="sub-details d-flex gap-3 ">
+                               <span>by <a href="#">Admin</a></span>
+                               <span>0 comment</span>
+                              </div>
+
+                              <div class="main-details d-flex flex-column gap-3 pt-3">
+                                <h3>Dual-Language Learners</h3>
+                                <p>The number of dual language learners in early childhood classrooms is …</p>
+                                <a href="#"><time>September 25, 2019</time></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                         
+                          
+        
+                        
+                           
+                          </div>
+                      </div>  
+        
+        
+        
+                      </div>
+                      
+        
+                    </div>
+                   </div>
+            </section>
+
+
+      <!-- end of Latest News -->
+
+
+      <!-- start of Footer -->
+           <footer class="footer d-flex justify-content-center align-items-center ">
+              <div class="container py-5">
+                <div class="row row-gap-5">
+                  <div class="col-md-12 col-lg-4 ">
+                    <div class="logo-div d-flex flex-column gap-3 justify-content-center justify-content-lg-start align-items-center align-items-lg-start">
+                    <a href="#"><img src="./assets/img/public/logo.svg" alt="logo"></a>
+                    <p>Our experienced team strives to offer a creative and engaging environment and the opportunity for children to learn, grow, and thrive.</p>
+                    <form>
+                      <input  type="text" name="signup" class="signup" placeholder="Newsletter signup" required>
+                      <button type="submit"><i class="fa-solid fa-arrow-right ps-2 "></i></button>
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 p-0 m-0">
+                    <h2>Quick Links</h2>
+                    <ul class="linksUl d-flex flex-wrap ps-2">
+                      <li class="d-flex">> <a href="#">About us</a></li>
+                      <li class="d-flex">> <a href="#">Prices</a></li>
+                      <li class="d-flex">> <a href="#">Programs</a></li>
+                      <li class="d-flex">> <a href="#">FAQs</a></li>
+                      <li class="d-flex">> <a href="#">Parent Info</a></li>
+                      <li class="d-flex">> <a href="#">Blog</a></li>
+                      <li class="d-flex">> <a href="#">Events</a></li>
+                      <li class="d-flex">> <a href="#">Testimonials</a></li>
+                      <li class="d-flex">> <a href="#">Gallery</a></li>
+                      <li class="d-flex">> <a href="#">Contacts</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-4 ">
+                    <h2>Our Contacts</h2>
+                    <ul class="contactUl d-flex flex-column flex-wrap ps-2 ">
+                      <li class="d-flex gap-2">
+                        <img src="./assets/img/public/map-marker-small.svg" alt="marker" >
+                         <a href="#">3261 Anmoore Road Brooklyn, NY 11230</a>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <img src="./assets/img/public/call.svg" alt="call" >
+                        <a href="#">800-123-4567, Fax: 718-724-3312</a>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <img src="./assets/img/public/envelope.svg" alt="envelope" >
+                        <a href="#">officeone@youremaissss.com</a>
+                      </li>
+                      <li class="d-flex gap-2 align-items-start">
+                        <img src="./assets/img/public/clock.svg" alt="clock" >
+                        <span>Mon-Fri: 9:00 am – 5:00 pm<br>Sat: 11:00 am – 16:00 pm</span>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+           </footer>
+      <!-- end of Footer -->
+
+      <!-- start of Privacy Policy -->
+           <section class="PrivacyPolicy">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-6 d-flex gap-3 justify-content-center align-items-center">
+                    <span>© 2019 <a href="#">ChildiT</a>. All Rights Reserved. <a href="#">Privacy Policy</a></span>
+                  </div>
+                  <div class="col-12 col-md-6 d-flex gap-3 justify-content-center align-items-center">
+                    <span>Follow us: </span>
+                    <ul class="d-flex text-start p-0 justify-content-start align-items-end gap-3">
+                      <li><a href="#">
+                        <img class="link-img" src="./assets/img/aboutUs/facebook.svg" alt="facebook icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a></li>
+                      <li>
+                        <a href="#">
+                          <img class="link-img" src="./assets/img/aboutUs/twitter.svg" alt="twitter icon">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                      <li>
+                        <a href="#">
+                          <img class="link-img"src="./assets/img/aboutUs/instagram.svg" alt="instagram icon">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+             </section>
+           
+      <!-- end of Privacy Policy -->
+       <button class="up-btn">
+        <i class="fa-solid fa-arrow-up"></i> 
+       </button>
+      
+     <script src="./assets/js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://rouninmedia.github.io/axe/axe.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+  </body>
+</html>
